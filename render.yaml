@@ -7,8 +7,7 @@ services:
   - type: web
     name: bhashaguru-backend
     runtime: node
-    plan: starter
-    region: oregon
+    plan: free
     buildCommand: npm install && npm run build
     startCommand: npm start
     healthCheckPath: /health
@@ -16,17 +15,7 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      # USER CONFIGURATION PLACEHOLDER:
-      # AI_API_KEY = *****
-      # Add your Google Gemini API Key in the Render Environment Variables tab
       - key: AI_API_KEY
         sync: false
       - key: PORT
         value: 10000
-      - key: STORAGE_DIR
-        value: /var/data/bhashaguru
-    # Persistent Disk for long-term student learning progress and audio cache
-    disk:
-      name: bhashaguru-student-data
-      mountPath: /var/data/bhashaguru
-      sizeGB: 1
