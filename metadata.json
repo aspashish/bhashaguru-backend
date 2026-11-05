@@ -1,0 +1,6 @@
+{
+  "name": "BhashaGuru AI English Teacher",
+  "description": "Interactive AI English learning app for Hindi speakers to master vocabulary, pronunciation, grammar, and speaking.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
