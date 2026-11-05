@@ -8,7 +8,7 @@ services:
     name: bhashaguru-backend
     runtime: node
     plan: free
-    buildCommand: npm install --legacy-peer-deps && npm run build
+    buildCommand: npm install --include=dev --legacy-peer-deps && npm run build
     startCommand: npm start
     healthCheckPath: /health
     autoDeploy: true
