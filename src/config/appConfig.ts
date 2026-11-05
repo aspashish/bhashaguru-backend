@@ -10,7 +10,7 @@
 
 export const RENDER_BACKEND_URL =
   (typeof import.meta !== 'undefined' && import.meta.env?.VITE_RENDER_BACKEND_URL) ||
-  'http://192.168.1.5:3000';
+  'https://bhashaguru-backend.onrender.com';
 
 /**
  * Determines whether the app is executing inside a native Capacitor Android container.
